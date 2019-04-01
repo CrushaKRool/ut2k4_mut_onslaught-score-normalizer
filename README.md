@@ -1,4 +1,4 @@
-This Mutator changes scoring rules in Onslaught so that a victory in regular time and overtime are worth the same amount of points, rather than giving 2 for regular time and 1 for overtime.
+This Mutator changes scoring rules in Onslaught so that a victory in regular time and overtime are both worth 1 point, rather than giving 2 for a victory in regular time and 1 for overtime.
 
 # Usage
 You can simply activate it like any other Mutator through the game UI.

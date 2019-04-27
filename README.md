@@ -3,7 +3,7 @@ This Mutator changes scoring rules in Onslaught so that a victory in regular tim
 # Usage
 You can simply activate it like any other Mutator through the game UI.
 
-If you are a server administrator and don't want your server to become non-standard from using a Mutator that is not on the whitelist, you may also simple add this as a ServerActor:
+If you are a server administrator and don't want your server to become non-standard from using a Mutator that is not on the whitelist, you may also simply add this as a ServerActor:
 
     [Engine.GameEngine]
     ...

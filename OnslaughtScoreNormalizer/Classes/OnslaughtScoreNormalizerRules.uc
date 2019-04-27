@@ -43,7 +43,7 @@ function bool CheckScore(PlayerReplicationInfo Scorer)
             {
                 onsGame.Teams[ 0 ].Score -= ScoreDiff;
             }
-            if ( IsEnemyMainCoreDestroyed( onsGame, 1 ) && !IsEnemyMainCoreDestroyed( onsGame, 0) )
+            if ( IsEnemyMainCoreDestroyed( onsGame, 1 ) && !IsEnemyMainCoreDestroyed( onsGame, 0 ) )
             {
                 onsGame.Teams[ 1 ].Score -= ScoreDiff;
             }
@@ -51,7 +51,10 @@ function bool CheckScore(PlayerReplicationInfo Scorer)
         else
         {
             // Only need to check the team of the player who scored the objective.
-            onsGame.Teams[ Scorer.Team.TeamIndex ].Score -= ScoreDiff;
+            if ( IsEnemyMainCoreDestroyed( onsGame, Scorer.Team.TeamIndex ) )
+            {
+                onsGame.Teams[ Scorer.Team.TeamIndex ].Score -= ScoreDiff;
+            }
         }
     }
 
